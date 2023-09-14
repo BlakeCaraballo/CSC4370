@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: local repeat url("background.png");
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, sans-serif;
+    
+    }
+    
+    .banner {
+    display: flex;
+    background: local repeat-x url("bannerbackground.png");
+    }
+    
+    .container {
+    position: relative;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    .header{
+    font-size: 24pt;
+    font-weight: bold;
+    margin-top: 20px;
+    line-height: 12pt;
+    
+    }
+    
+    
+    .title {
+    font-size: 24px;
+    text-shadow: 3px 3px #999999;
+    }
+    
+    .content,
+    .overall {
+    max-width: 800px;
+    display: flex;
+    }
+    
+    .overall {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: transparent;
+    }
+    
+    .general-overview {
+    
+    background-color: #a2b964;
+    }
+    
+    .general-overview dl {
+    padding: 10px;
+    }
+    
+    .general-overview__image img {
+    
+    }
+    
+    .review p:first-child {
+    font-size: 8pt;
+    min-height: 20px;
+    background-color: #E1D697;
+    font-weight: bold;
+    border: solid 2px grey;
+    
+    padding: 8px;
+    }
+    
+    .review img {
+    float: left;
+    margin-right: 5px;
+    }
+    
+    .reviews {
+    width: 550px;
+    min-width: 550px;
+    }
+    
+    .review__banner {
+    
+    display: flex;
+    
+    padding-left: 12px;
+    height: 83px;
+    background: local repeat-x url("rottenbackground.png");
+    font-size: 48pt;
+    color: red;
+    font-weight: bold;
+    align-items: center;
+    }
+    
+    .review__column {
+    width: 254px;
+    background: #E1D697;
+    margin: 2% 1%;
+    }
+    
+    .content {
+    border: solid 4px gray;
+    
+    flex-direction: column;
+    }
+    
+    .right {
+    align-self: end;
+    float: right;
+    }
+    
+    .left {
+    align-self: start;
+    float: left;
+    }
+    
+    .pagination {
+    width: 100%;
+    text-align: center;
+    background-color: #a2b964;
+    
+    }
+    
+    
+    .footer {
+    opacity: 0.50;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    
+    }
+    
+    .a{
+    display: block;
+    
+    }
+    dt{
+        font-weight: bold;
+    }
