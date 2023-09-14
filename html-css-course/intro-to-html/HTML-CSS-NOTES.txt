@@ -1,0 +1,146 @@
+HTML Basics
+<button> = opening tag
+button = tag name
+</button> = closing tag
+
+<a> = anchor element
+anchor = link to another website
+<a href=""> = link to another website
+href="" = HTML attribute
+HTML attribute = modifies how an element behaves
+<a href="" target="_blank"> = link to another website that opens in new tab
+
+Weird syntax rules
+Extra spaces are ignored in HTML including new lines, so encase the text in a <span> and edit the margins
+
+
+CSS Basics
+
+<style>
+  .subscribe-button {
+    background-color: rgb(200, 0, 0);
+    color: white;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 8px;
+    transition: opacity 0.15s;
+    vertical-align: top;
+  }
+
+  .subscribe-button:hover{
+    opacity: 0.8;
+  }
+
+  .subscribe-button:active{
+   opacity: 0.5;
+  }
+
+  .join-button{
+    background-color: white;
+    border-color: rgb(6, 95, 212);
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(6, 95, 212);
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: backround-color 0.15s,
+    color 0.15s;
+  }
+
+  .join-button:hover{
+    background-color: rgb(6, 95, 212);
+    color: white;
+  }
+
+  .join-button:active{
+    opacity: 0.5;
+  }
+
+  .tweet-button{
+    background-color: rgb(29, 155, 240);
+    color: white;
+    border: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: box-shadow 0.15s;
+    vertical-align: top;
+    
+  }
+
+  .tweet-button:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .tweet-button:active{
+    opacity: 0.5;
+  }
+</style>
+
+<button class="subscribe-button">
+  SUBSCRIBE
+</button>
+
+<button class="join-button">
+  JOIN
+</button>
+
+<button class="tweet-button">
+  Tweet
+</button>
+
+Syntax: 
+button = CSS selector (element you are targeting) effects all buttons
+backround-color: = CSS property
+red = CSS value
+color: = text color
+boder-radius: = rounded edges
+border-style: solid = one solid color
+margin-right/left = add space to right/left of button
+padding = spacing inside button
+padding default = 6 left & right and 1 top & bottom
+use padding instead of hard coding height and width
+vertical align:top pins the buttons to the top of the page instead of aligning the text
+borders add 1px to a button so to compensate reduce padding by 1px top and bottom
+<p> by default have margins so reduce/increase as needed, check dev tools
+CSS Specificity- if you have more than 2 styles affecting one element it will pick the explicit one
+
+
+To round a button make the border radius half of either height or width, whichever has a lower value
+.subscribe-button:hover = pseudo-class- adds extra styles under certain conditions
+hover = hover over button
+active = click button
+
+Chrome Dev Tools
+click the top left arrow, click an element to see it's styles
+this way you can copy exactly what an element looks like. 
+the colors are in hex, convert to RGB
+the computed tab also has lots of values for you
+
+Types of elements
+1. block elements - take entire line in their container(<p></p>)
+2. inline-block elements - takes only as much as it needs (img, search bars,etc)
+3. inline elements - occur in lines of text (<strong></strong>
+
+
+
+
+
+ 
+
